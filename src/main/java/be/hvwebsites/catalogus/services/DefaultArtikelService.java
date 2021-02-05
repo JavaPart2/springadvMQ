@@ -21,6 +21,6 @@ public class DefaultArtikelService implements ArtikelService{
     @Override
     public void create(Artikel artikel) {
         repository.save(artikel);
-        template.convertAndSend("artikels", null, new ArtikelGemaakt(artikel));
+        template.convertAndSend("catalogus", null, new ArtikelGemaakt(artikel));
     }
 }
