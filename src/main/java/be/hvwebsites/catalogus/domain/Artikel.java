@@ -16,6 +16,7 @@ public class Artikel {
 
     public Artikel(String naam) {
         this.naam = naam;
+        gemaakt = LocalDateTime.now();
     }
 
     protected Artikel() {
